@@ -9,6 +9,13 @@ class Komnews extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'title',
+        'slug',
+        'content',
+        'image'
+    ];
+
     public function categories() {
         return $this->belongsToMany(Category::class, 'komnews_categories');
     }

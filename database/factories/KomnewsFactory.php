@@ -22,7 +22,7 @@ class KomnewsFactory extends Factory
             'title' => $this->faker->sentence(mt_rand(2, 10)),
             'slug' => $this->faker->slug(),
             'content' => $this->faker->paragraph(5, 20),
-            'image' => $this->faker->imageUrl(640, 480, 'animals', true)
+            'image' => 'https://placehold.co/600x400'
         ];
     }
 
