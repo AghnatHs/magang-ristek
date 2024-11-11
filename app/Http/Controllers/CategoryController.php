@@ -9,7 +9,7 @@ class CategoryController extends Controller
 {
     public function index(Category $category) {
         $category->load('komnews');
-        return view('categories', [
+        return response()->json([
             'title' => "Category : $category->name",
             'cat' => $category->name,
             'categories' => Category::all(),
