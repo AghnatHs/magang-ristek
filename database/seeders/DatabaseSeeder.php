@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
         ]);
         Category::create([
             'name'=> 'Innovation',
-            'slug'=> 'Event'
+            'slug'=> 'innovation'
         ]);
 
         Komnews::factory()->count(20)->create();
