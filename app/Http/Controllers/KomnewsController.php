@@ -21,6 +21,6 @@ class KomnewsController extends Controller
     public function show(Komnews $komnews)
     {
         $komnews->load('categories');
-        return response()->json(['komnews' => $komnews])
+        return response()->json(['komnews' => $komnews]);
     }
 }
