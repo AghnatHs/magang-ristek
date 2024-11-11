@@ -27,6 +27,14 @@ module.exports = {
             },
             boxShadow: {
                 "solid-black": "1.5px 1.5px 0px #000000",
+                tebal: "0 10px 20px rgba(0, 0, 0, 0.25)", // Shadow lebih tebal
+                "super-tebal": "0 20px 40px rgba(0, 0, 0, 0.35)", // Shadow lebih tebal lagi
+            },
+            backgroundColor: {
+                orangeTebal: "#F1880A",
+            },
+            colors: {
+                orangeTebal: "#F1880A",
             },
 
             // Keyframes
@@ -127,8 +135,10 @@ module.exports = {
                 "card-bottom-tablet":
                     "url('/resources/assets/pngs/card-proker/card2-tablet.png')",
 
-                "about-himalkom-desktop": "url('/resources/assets/pngs/containers/about-himalkom-desktop.png')",
-                "goals-himalkom-desktop": "url('/resources/assets/pngs/containers/tujuan-himalkom-desktop.png')",
+                "about-himalkom-desktop":
+                    "url('/resources/assets/pngs/containers/about-himalkom-desktop.png')",
+                "goals-himalkom-desktop":
+                    "url('/resources/assets/pngs/containers/tujuan-himalkom-desktop.png')",
             },
             backgroundSize: {
                 stretch: "100% 100%",
@@ -142,6 +152,10 @@ module.exports = {
                 {
                     ".text-shadow-black": {
                         textShadow: theme("textShadow.black"),
+                    },
+                    ".text-border": {
+                        "text-shadow":
+                            "2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black",
                     },
                 },
                 ["responsive", "hover"]
