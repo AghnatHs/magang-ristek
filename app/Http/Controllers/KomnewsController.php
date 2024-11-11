@@ -11,7 +11,7 @@ class KomnewsController extends Controller
     public function index()
     {
         return response()->json([
-            'title' => 'Komnews All',
+            'title' => 'KOMNEWS',
             'categories' => Category::all(),
             'komnews' => Komnews::with('categories')->get(),
             'headline' => Komnews::with('categories')->latest()->get()->first()
